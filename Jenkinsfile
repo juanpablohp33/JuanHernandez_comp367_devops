@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('push') {
+      steps {
+        sh 'sudo docker push juanpablohp31/webapp_juanhernandez'
+      }
+    }
+
   }
 }
