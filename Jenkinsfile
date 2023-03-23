@@ -9,7 +9,7 @@ pipeline {
 
     stage('Docker Build') {
       steps {
-        sh 'docker build -t WebApp_JuanHernandez .'
+        sh 'docker build -t webapp_juanhernandez .'
       }
     }
 
