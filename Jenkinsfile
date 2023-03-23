@@ -9,7 +9,7 @@ pipeline {
 
     stage('Maven') {
       steps {
-        sh './mvnw spring-boot:run'
+        sh './mvnw clean package'
       }
     }
 
