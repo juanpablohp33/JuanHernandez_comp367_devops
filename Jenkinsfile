@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('Docker Build1') {
+    stage('Maven') {
       steps {
-        sh 'sudo docker build -t webapp_juanhernandez .'
+        sh './mvnw spring-boot:run'
       }
     }
 
