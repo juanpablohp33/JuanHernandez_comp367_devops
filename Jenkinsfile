@@ -9,7 +9,7 @@ pipeline {
 
     stage('Maven') {
       steps {
-        sh './mvnw clean package'
+        sh 'sudo ./mvnw clean package'
       }
     }
 
