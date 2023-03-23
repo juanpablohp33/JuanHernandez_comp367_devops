@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Docker Login') {
+      steps {
+        sh 'sudo docker login -u juanpablohp31 -p Alianza123.'
+      }
+    }
+
   }
 }
