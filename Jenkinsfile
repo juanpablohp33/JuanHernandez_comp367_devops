@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('Docker Build1') {
+      steps {
+        sh 'sudo docker build -t webapp_juanhernandez .'
+      }
+    }
+
     stage('Docker Build') {
       steps {
         sh 'sudo docker build -t webapp_juanhernandez .'
